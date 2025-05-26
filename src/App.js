@@ -1,4 +1,3 @@
-// src/App.js
 import DashboardMainContent from './layouts/DashboardMainContent';
 import Sidebar from './layouts/Sidebar';
 

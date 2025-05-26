@@ -1,4 +1,4 @@
-import avatarImage from '../assets/avatar.png'; // Make sure you have an avatar image
+import avatarImage from '../assets/avatar.png';
 import ActivityFeed from '../components/ActivityFeed';
 import CalendarView from '../components/CalendarView';
 import HumanAnatomySection from '../components/HumanAnatomySection';
