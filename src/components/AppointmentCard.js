@@ -1,5 +1,3 @@
-// src/components/AppointmentCard.js
-
 const AppointmentCard = ({ avatar, doctorName, specialty, dateTime }) => {
     return (
         <div className="appointment-item">
