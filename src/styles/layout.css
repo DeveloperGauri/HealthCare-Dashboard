@@ -1,0 +1,296 @@
+@import './variables.css';
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--color-bg-light);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--color-bg-sidebar);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--spacing-xxl);
+    flex-shrink: 0;
+    min-height: 100vh;
+}
+
+.app-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.app-logo .logo-health {
+    color: var(--color-logo-health);
+}
+
+.app-logo .logo-care {
+    color: var(--color-logo-care);
+}
+
+.sidebar .app-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-xxl);
+    padding-left: var(--spacing-sm);
+}
+
+.sidebar h4 {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-sm);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.main-nav-section {
+    /* flex-grow: 1; */
+}
+
+.sidebar-spacer {
+    flex-grow: 1;
+}
+
+.bottom-nav-section .nav-list.bottom-links {
+    margin-bottom: 0;
+}
+
+.dashboard-main-content {
+    flex-grow: 1;
+    background-color: var(--color-bg-card);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-main-container);
+    padding: var(--spacing-xl);
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: var(--spacing-xxl);
+}
+
+.dashboard-left-column {
+    grid-template-rows: auto auto 1fr;
+    gap: var(--spacing-xl);
+}
+
+.dashboard-right-column {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: var(--spacing-xl);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.main-header .time-period-selector {
+    font-size: 0.9rem;
+    color: var(--color-text-medium);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-header .time-period-selector:hover {
+    background-color: var(--color-bg-search);
+}
+
+.user-profile-widget {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.user-profile-widget .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-primary-blue);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.user-profile-widget .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-profile-widget .add-button {
+    background-color:#3a34a5;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+    transition: background-color 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1280px) {
+    .dashboard-main-content {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-lg);
+    }
+
+    .sidebar {
+        width: 200px;
+        margin-right: var(--spacing-lg);
+    }
+
+    .dashboard-left-column,
+    .dashboard-right-column {
+        gap: var(--spacing-lg);
+    }
+
+    .app-container {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 992px) {
+    .app-container {
+        flex-direction: column;
+        padding: var(--spacing-md);
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: var(--spacing-md);
+        padding: var(--spacing-lg);
+        height: auto;
+        min-height: unset;
+    }
+
+    .sidebar .app-logo {
+        text-align: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .sidebar h4 {
+        display: none;
+    }
+
+    .main-nav-section,
+    .bottom-nav-section {
+        flex-grow: 0;
+    }
+
+    .sidebar-spacer {
+        display: none;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-md);
+        margin-bottom: 0;
+    }
+
+    .sidebar nav li {
+        margin: 0 !important;
+    }
+
+    .dashboard-main-content {
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius-md);
+        box-shadow: none;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .user-profile-widget {
+        justify-content: flex-start;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: var(--spacing-sm);
+    }
+    .dashboard-main-content {
+        padding: var(--spacing-sm);
+        gap: var(--spacing-md);
+    }
+
+    .card {
+        padding: var(--spacing-lg);
+    }
+
+    .main-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .user-profile-widget .avatar {
+        width: 40px;
+        height: 40px;
+    }
+    .user-profile-widget .add-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        padding: var(--spacing-xs);
+    }
+    .dashboard-main-content {
+        padding: var(--spacing-xs);
+        gap: var(--spacing-sm);
+    }
+
+    .card {
+        padding: var(--spacing-md);
+    }
+
+    .main-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .sidebar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
