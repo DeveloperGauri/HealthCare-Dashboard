@@ -1,47 +1,41 @@
-/* src/styles/_variables.css */
 :root {
-    /* Colors */
     --color-primary-blue: #5a7dff;
     --color-primary-text:#3836a8;
     --color-secondary-blue: #e0edff;
     --color-text-dark: #333;
     --color-text-medium: #777;
     --color-text-light: #999;
-    --color-bg-light: #f2f5f9; /* Overall page background */
+    --color-bg-light: #f2f5f9; 
     --color-bg-card: #f6faff;
     --color-bg-sidebar: #ffffff;
-    --color-bg-search: #f7f9fc; /* Light background for search input */
+    --color-bg-search: #f7f9fc; 
     --color-border-light: #e0e0e0;
-    --color-status-healthy: #34d399; /* Green */
-    --color-status-unhealthy: #a63b40; /* Red */
+    --color-status-healthy: #34d399; 
+    --color-status-unhealthy: #a63b40; 
     --color-chart-bar: #5a7dff;
     --color-status-healthy-heart:#3e3fab;
     --color-status-healthy-lungs:#2fd6e5;
     --color-bg-calender:#ecf3fe;
-    --color-logo-health: #5ccad4; /* Red color for "Health" */
-    --color-logo-care: #281f5d; /* Your primary blue color for "care." (or adjust as needed) */
+    --color-logo-health: #5ccad4; 
+    --color-logo-care: #281f5d; 
 
 
-      /* Status Colors */
-    --color-status-healthy: #28a745; /* Green */
-    --color-status-unhealthy: #dc3545; /* Red */
-    --color-status-good: #17a2b8; /* Info blue/teal */
-    --color-status-strong: #007bff; /* Primary blue */
-    /* Accent Colors (for your polls) */
+    --color-status-healthy: #28a745; 
+    --color-status-unhealthy: #dc3545; 
+    --color-status-good: #17a2b8; 
+    --color-status-strong: #007bff; 
     --accent-red: #b34b4c;
     --accent-green: #7ad1c0;
     --accent-orange: #f7765b;
     --accent-yellow: #FFC107;
     --accent-purple: #6F42C1;
     --color-primary-blue:#3933a4;
-    /* Border Radius */
     --border-radius-lg: 20px;
     --border-radius-md: 15px;
     --border-radius-sm: 10px;
     --border-radius-xs: 8px;
     --border-radius-pill: 50px;
 
-    /* Spacing */
     --spacing-xs: 8px;
     --spacing-sm: 10px;
     --spacing-md: 15px;

@@ -165,7 +165,7 @@ background-color: var(--color-status-healthy-lungs);
     align-items: center;
     gap: var(--spacing-md);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    height: 119px; /* Set a fixed height for health status cards */
+    height: 119px; 
 }
 
 .health-status-card:hover {
@@ -174,7 +174,7 @@ background-color: var(--color-status-healthy-lungs);
 }
 
 .health-status-card .icon-wrapper {
-    font-size: 2.2rem; /* Slightly increased icon size */
+    font-size: 2.2rem; 
     color: var(--color-primary-blue);
     flex-shrink: 0;
 }
@@ -187,7 +187,7 @@ background-color: var(--color-status-healthy-lungs);
 }
 
 .health-status-card .details strong {
-    font-size: 1.15rem; /* Increased font size for strong text */
+    font-size: 1.15rem; 
     color: var(--color-text-dark);
     margin-bottom: 4px;
 }
@@ -195,13 +195,13 @@ background-color: var(--color-status-healthy-lungs);
 .health-status-card .health-date-and-poll {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Slightly increased gap */
-    font-size: 0.95rem; /* Increased font size */
+    gap: 5px; 
+    font-size: 0.95rem; 
     color: var(--color-text-small);
 }
 
 .health-status-card .health-date {
-    font-size: 0.95rem; /* Increased font size */
+    font-size: 0.95rem; 
     color: var(--color-text-medium);
 }
 
@@ -216,13 +216,13 @@ background-color: var(--color-status-healthy-lungs);
 .health-status-poll {
     display: flex;
     align-items: center;
-    gap: 6px; /* Increased gap */
+    gap: 6px; 
     flex-shrink: 0;
 }
 
 .health-status-poll-bar-track {
-    width: 140px; /* Increased width for the track */
-    height: 15px; /* Increased height for the poll bar */
+    width: 140px; 
+    height: 15px; 
     background-color: #e0e7ff;
     border-radius: 5px;
     overflow: hidden;
@@ -236,7 +236,7 @@ background-color: var(--color-status-healthy-lungs);
 }
 
 .health-status-poll-percentage {
-    font-size: 0.95rem; /* Increased font size */
+    font-size: 0.95rem; 
     font-weight: 600;
     color: var(--color-primary-blue);
     white-space: nowrap;
