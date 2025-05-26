@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HealthCare-Dashboard/static/css/main.d9b7bda0.css",
+    "main.js": "/HealthCare-Dashboard/static/js/main.5eaa0a2c.js",
+    "static/media/human-anatomy.png": "/HealthCare-Dashboard/static/media/human-anatomy.971f69e2718f748825ae.png",
+    "static/media/avatar.png": "/HealthCare-Dashboard/static/media/avatar.385e45258653464df180.png",
+    "index.html": "/HealthCare-Dashboard/index.html",
+    "main.d9b7bda0.css.map": "/HealthCare-Dashboard/static/css/main.d9b7bda0.css.map",
+    "main.5eaa0a2c.js.map": "/HealthCare-Dashboard/static/js/main.5eaa0a2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9b7bda0.css",
+    "static/js/main.5eaa0a2c.js"
+  ]
+}
